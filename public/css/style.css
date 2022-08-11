@@ -1,0 +1,26 @@
+body {
+    background-color: #EAC926;
+}
+
+header img {
+    width: 150px;
+}
+
+#banner {
+    display: none;
+}
+
+main {
+    display: none;
+}
+ 
+nav ul li a{
+    text-decoration: none;
+    color: black
+}
+
+ul {
+    list-style: none;
+}
+
+
