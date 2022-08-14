@@ -1,9 +1,43 @@
+* {
+    box-sizing: border-box;
+    font-family: "Roboto"
+}
+
+header {
+    padding: 20px;
+}
+
+#busqueda {
+    width: 180px;
+}
+
+#logo-barra {
+    display: flex;
+    justify-content: space-between;
+}
+
 body {
     background-color: #EAC926;
 }
 
+#cuotas {
+
+    font-weight: 400;
+}
+
+#boton-lineas {
+    background-color: #03264C;
+    color: #ffffff;
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
 header img {
-    width: 150px;
+    width: 130px;
 }
 
 #banner {
@@ -13,14 +47,57 @@ header img {
 main {
     display: none;
 }
- 
-nav ul li a{
+
+nav {
+    display: none;
+}
+
+nav a{
     text-decoration: none;
     color: black
 }
 
-ul {
+nav ul {
     list-style: none;
+    padding: 0;
 }
 
 
+@media (min-width: 750px) {
+    #logo-barra {
+        justify-content: space-between;
+        width: 400px;
+    }
+
+
+    #logo-barra-cuotas {
+        display: flex;
+        justify-content: space-between;
+    } 
+    
+    #cuotas {
+        width: 200px;
+        text-align: right;
+    }
+
+    #busqueda {
+        width: 200px;
+    }
+
+    #boton-lineas {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav li {
+        margin: 5px;
+    }
+}
