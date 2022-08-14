@@ -8,21 +8,23 @@ header {
 }
 
 #busqueda {
-    width: 180px;
+    width: 200px;
+    
 }
 
-#logo-barra {
+#top-header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-}
+} 
 
 body {
     background-color: #EAC926;
 }
 
 #cuotas {
-
     font-weight: 400;
+    
 }
 
 #boton-lineas {
@@ -64,16 +66,7 @@ nav ul {
 
 
 @media (min-width: 750px) {
-    #logo-barra {
-        justify-content: space-between;
-        width: 400px;
-    }
 
-
-    #logo-barra-cuotas {
-        display: flex;
-        justify-content: space-between;
-    } 
     
     #cuotas {
         width: 200px;
