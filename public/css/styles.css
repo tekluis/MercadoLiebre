@@ -73,13 +73,15 @@ header ul li a{
 }
 
 header .form .input{
-    font-size: 15px;
+    font-size: 13px;
     background-color: #FFF;
     border: 1px solid #000;
     outline: none;
     color: #666;
     padding: 2px;
     white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 header .form .submit{
     background-color: #FFF;
@@ -228,7 +230,7 @@ main section article{
 @media (min-width: 769px){
 
     .cuotas {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     
@@ -249,6 +251,7 @@ main section article{
     .menu-nav {
         display: flex;
         justify-content: space-between;
+        padding: 10px;
        }
 
     .menu-nav ul {
@@ -256,6 +259,7 @@ main section article{
         justify-content: space-around;
         width: 45%;
         font-size: 17px;
+
     }
 
 
