@@ -121,7 +121,7 @@ h3,
 }
 
 .description{
-    display: none;
+    visibility: hidden;
     margin-top: 20px;
 }
 
@@ -203,17 +203,59 @@ article div.main-article{
 main section article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
- 
 
-@media (min-width: 361px) {
-    .description {
-        display: block;
-    }
+.login {
+    display: flex;
+    justify-content: center;
+    
+}
 
+.login form, .login div, .login input {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    width: 90%;
+    
+}
+
+.login input {
+    margin: 20px;
+    height: 50px;
+}
+
+.login .boton_enviar {
+    background-color: #0044AA;
+    color: white;
+}
+
+.register form {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} 
+
+.register form input {
+    width: 70%;
+    margin: 10px;
+}
+
+h4 {
+    width: 70%;
 }
 
 
+
+ 
+
+
 @media (min-width: 468px){
+
+    .description {
+        visibility: visible;
+    }
 
     .cuotas {
         font-size: 22px;
