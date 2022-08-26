@@ -123,6 +123,7 @@ h3,
 .description{
     visibility: hidden;
     margin-top: 20px;
+    transition: all 1s;
 }
 
 section.banner img{
@@ -137,6 +138,7 @@ main{
 main section article{
     background-color: #fff;    
     margin: 10px 0px;
+    transition: all 1s;
 }
 
 main section article img{
@@ -161,12 +163,12 @@ main section article i{
     position: relative;
     left:87%;
     top: -30px;
-    transition: all 1s;
+    transition: all 2.5s;
 
 }
 
 main section article i:hover {
-    color: red;
+    color: black;
     transform: rotate(-90deg);
 }
 
@@ -233,6 +235,7 @@ main section article:hover {
 .login .boton_enviar {
     background-color: #42f5f2;
     color: black;
+    transition: all 1s;
 }
 
 .register form {
@@ -263,6 +266,38 @@ article:hover .description {
     visibility: visible;
 }
 
+footer {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    
+}
+
+footer div {
+    width: 30%;
+    display:flex;
+    flex-wrap: wrap;
+    padding: 30px 0px;
+}
+
+footer div i, footer div h4, footer div p, footer .fas {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    transition: all 2s;
+}
+
+footer div i:hover {
+    color: red;
+    transform: rotate(360deg);
+}
+
+footer {
+    visibility: hidden;
+}
+
 @media (min-width: 468px){
 
 
@@ -279,6 +314,7 @@ article:hover .description {
     .products article {
         width: 44%;
     }
+
 
 }
 
@@ -317,5 +353,8 @@ article:hover .description {
 
     }
 
+    footer {
+        visibility: visible;
+    }
 
 }
