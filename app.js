@@ -1,10 +1,10 @@
 const express = require('express');
 const app = express();
 app.use(express.static('public'));
+var puerto=3000;
 
-
-app.listen(3000, ()=>{
-    console.log('Servidor funcionando');
+app.listen(puerto, ()=>{
+    console.log('Servidor funcionando en puerto '+puerto);
 });
 
 app.get('/', (req,res)=>{

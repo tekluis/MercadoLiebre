@@ -138,7 +138,7 @@ main{
 main section article{
     background-color: #fff;    
     margin: 10px 0px;
-    transition: all 1s;
+    transition: all 1s ease-in;
 }
 
 main section article img{
@@ -168,7 +168,7 @@ main section article i{
 }
 
 main section article i:hover {
-    color: black;
+    color: rgb(226, 170, 170);
     transform: rotate(-90deg);
 }
 
@@ -235,36 +235,9 @@ main section article:hover {
 .login .boton_enviar {
     background-color: #42f5f2;
     color: black;
-    transition: all 1s;
+    transition:all 1s;
 }
 
-.register form {
-    width: 60%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-} 
-
-.register form input {
-    width: 70%;
-    margin: 10px;
-}
-
-h4 {
-    width: 70%;
-}
-
-
-.boton_enviar:hover {
-    background-color: #0022AA;
-    color: white;
-}
- 
-
-article:hover .description {
-    visibility: visible;
-}
 
 footer {
     background-color: white;
@@ -297,6 +270,74 @@ footer div i:hover {
 footer {
     visibility: hidden;
 }
+
+
+.boton_enviar:hover {
+    background-color: #0022AA;
+    color: white;
+}
+ 
+
+article:hover .description {
+    visibility: visible;
+}
+
+.registro {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.registro > input {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+.fecha, .archivo, .profile label, .interests label {
+    color: #666;
+}
+
+#label_nac, .registro h4 {
+    width: 100%;
+}
+
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+
+.interests {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.interests div {
+    width: 70%;
+    margin: 10px 0px;
+}
+
+
+.botones{
+    height: 30px;
+    margin: 20px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.botones input {
+    width: 30%;
+    background-color: #9da3f0;
+}
+
 
 @media (min-width: 468px){
 
