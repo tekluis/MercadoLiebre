@@ -29,17 +29,19 @@ body{
 
 .form {
     display: flex;
-    align-items: top;
+    align-items: center;
     width: 40%;
     height: 24px;
 }
 
 .input {
-    width: 80%;
+    width: 90%;
+    border: white;
 }
 
 .submit {
-    width: 20px;
+    width: 10%;
+    border: white;
 }
 .cuotas {
     font-size:15px;
@@ -75,7 +77,6 @@ header ul li a{
 header .form .input{
     font-size: 13px;
     background-color: #FFF;
-    border: 1px solid #000;
     outline: none;
     color: #666;
     padding: 2px;
@@ -85,7 +86,6 @@ header .form .input{
 }
 header .form .submit{
     background-color: #FFF;
-    border: 1px solid #000;
     color: #666;
 }
 
@@ -257,8 +257,8 @@ footer div {
 footer div i, footer div h4, footer div p, footer .fas {
     width: 80%;
     margin: auto;
-    display: flex;
     justify-content: center;
+    text-align: center;
     transition: all 2s;
 }
 
@@ -267,8 +267,8 @@ footer div i:hover {
     transform: rotate(360deg);
 }
 
-footer {
-    visibility: hidden;
+footer h4, footer p {
+    display: none;
 }
 
 
@@ -357,6 +357,10 @@ article:hover .description {
     }
 
 
+    footer h4 {
+        display: flex;
+    }
+
 }
 
 @media (min-width: 769px){
@@ -394,8 +398,8 @@ article:hover .description {
 
     }
 
-    footer {
-        visibility: visible;
+    footer p {
+        display: flex;
     }
 
 }
