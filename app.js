@@ -3,7 +3,7 @@ const app = express();
 app.use(express.static('public'));
 var puerto=3000;
 
-app.listen(puerto, ()=>{
+app.listen(process.env.PORT || puerto, ()=>{
     console.log('Servidor funcionando en puerto '+puerto);
 });
 
