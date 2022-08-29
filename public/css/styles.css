@@ -18,9 +18,11 @@ body{
 }
 
 .logo {
-    width: 40%;
+    max-width: 200px;
+    min-width: 150px;
     align-items:center;
     padding: 20px;
+    width: 30%;
 }
 
 .logo img {
@@ -224,6 +226,7 @@ main section article:hover {
     margin: auto;
     justify-content: center;
     width: 90%;
+    max-width: 700px;;
     
 }
 
@@ -244,11 +247,11 @@ footer {
     display: flex;
     justify-content: space-around;
     margin: auto;
-    
+    flex-direction: column;
 }
 
 footer div {
-    width: 30%;
+    width: 100%;
     display:flex;
     flex-wrap: wrap;
     padding: 30px 0px;
@@ -267,16 +270,16 @@ footer div i:hover {
     transform: rotate(360deg);
 }
 
-footer h4, footer p {
-    display: none;
-}
-
 
 .boton_enviar:hover {
     background-color: #0022AA;
     color: white;
 }
  
+.boton_cancelar:hover {
+    background-color: red;
+    color: white;
+}
 
 article:hover .description {
     visibility: visible;
@@ -287,6 +290,7 @@ article:hover .description {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    max-width: 500px;
 }
 
 .registro > input {
@@ -325,19 +329,15 @@ article:hover .description {
 }
 
 
-.botones{
-    height: 30px;
-    margin: 20px 0px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-
 .botones input {
     width: 30%;
     background-color: #9da3f0;
 }
 
+footer .fas {
+    font-size: 35px;
+    color: blue;
+}
 
 @media (min-width: 468px){
 
@@ -356,6 +356,13 @@ article:hover .description {
         width: 44%;
     }
 
+    footer {
+        flex-direction: row;
+    }
+
+    footer div {
+        width: 30%;
+    }
 
     footer h4 {
         display: flex;
@@ -395,6 +402,7 @@ article:hover .description {
         justify-content: space-around;
         width: 45%;
         font-size: 17px;
+        max-width: 400px;
 
     }
 
